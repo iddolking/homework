@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <title>원페이지쇼핑몰</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        *{font-family: 'Black Han Sans', sans-serif;}
+        .myitem {
+            width: 500px;
+            height: 300px;
+
+            background-image: url("data:image/jpeg;base64,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 ");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .price {
+            font-size: 16px;
+        }
+        .desc{
+            width: 500px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .order-box{
+            width:500px;
+        }
+        .mybtn{
+            width:100px;
+            margin: auto;
+            display: block;
+        }
+        .wrap{
+            margin: auto;
+            width: 500px;
+
+
+        }
+    </style>
+    <script>
+        function order(){
+            alert("주문이 완료되었습니다!");
+        }
+
+    </script>
+</head>
+
+<body>
+<div class="wrap">
+<div class="myitem"></div>
+<div class="desc">
+    <h1>양초를 팝니다<span class="price">가격:3,000원/개</span></h1>
+    <p>이 양초는 특별한 힘을 가지고 있습니다. 하나 두 개 켜 놓으면 또 다른 촛불을 찾을 수 있죠!</p>
+</div>
+<div class="order-box">
+    <div class="input-group mb-3">
+    <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">주문자 이름</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+</div>
+    <div class="input-group mb-3">
+    <div class="input-group-prepend">
+    <label class="input-group-text" for="inputGroupSelect01">수량</label>
+    </div>
+    <select class="custom-select" id="inputGroupSelect01">
+        <option selected>--수량을 선택하세요--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    </div>
+    <div class="input-group mb-3">
+    <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">주소</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+</div>
+    <div class="input-group mb-3">
+    <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">전화번호</span>
+    </div>
+    <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+</div>
+    <button onclick="order()" type="button" class="btn btn-primary mybtn">주문하기</button>
+</div>
+</div>
+</body>
+
+</html>
